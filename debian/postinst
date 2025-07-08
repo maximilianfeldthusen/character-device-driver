@@ -1,1 +1,7 @@
 
+#!/bin/bash
+set -e
+insmod /usr/lib/char-driver/char_driver.ko || modprobe char_driver
+major=$(awk '$2=="char_dev_demo" {print $1}' /proc/devices)
+mknod /dev/char_dev_demo c $major 0 || true
+chmod 666 /dev/char_dev_demo
