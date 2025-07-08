@@ -1,1 +1,12 @@
 
+Source: char-driver
+Package: char-driver
+Version: 1.0
+Section: misc
+Priority: optional
+Architecture: amd64
+Maintainer: Your Name <you@example.com>
+Depends: ${misc:Depends}
+Description: Custom character device driver with ioctl support
+ Simple char device kernel module with ioctl and read/write support.
+
