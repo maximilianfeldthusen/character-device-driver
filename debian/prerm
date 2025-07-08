@@ -1,1 +1,5 @@
+#!/bin/bash
+set -e
+rmmod char_driver || true
+rm -f /dev/char_dev_demo
 
