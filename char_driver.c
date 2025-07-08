@@ -89,7 +89,7 @@ static void __exit char_exit(void) {
 module_init(char_init);
 module_exit(char_exit);
 
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("MIT");
 MODULE_AUTHOR("Your Name");
 MODULE_DESCRIPTION("Character device with ioctl");
 
